@@ -1,4 +1,15 @@
 /* =========================
+   Untuk semua media jika di buka di mobile
+========================= */
+
+@media(max-width:768px){
+    .footer-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* =========================
    RESET & GLOBAL
 ========================= */
 
@@ -163,11 +174,12 @@ nav a:hover {
 .about {
     padding: 70px 80px;
     text-align: center;
+    background: #f5f8fc;
 }
 
 .about h2 {
     color: #2174d3;
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
@@ -185,14 +197,16 @@ nav a:hover {
 ========================= */
 
 .cara {
+    background: #f5f8fc;
     padding: 70px 80px;
     text-align: center;
 }
 
 .cara h2 {
     color: #2174d3;
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .step {
@@ -227,3 +241,105 @@ nav a:hover {
     text-align: center;
     font-style: italic;
 }
+
+
+/* =========================
+   MAIN Laporan Terbaru
+========================= */
+
+.publik {
+    padding: 70px 80px;
+    align-items: center;
+    background: #f5f8fc;
+}
+
+.publik h2 {
+    text-align: center;
+    color: #2174d3;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3) ;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform:translateY(-10px);
+}
+
+.card h3 {
+    color: #2174d3;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.status {
+    display: block;
+    width: max-content;
+    margin: 15px auto 0;
+    padding: 7px 15px;
+    border-radius: 20px;
+    background: #fff3cd;
+    color: #856404;
+    font-size: 14px;
+}
+
+
+/* =========================
+   footer
+========================= */
+
+.footer {
+    background-color: #0d47a1;
+    color: white;
+    padding: 50px 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #e3f2fd;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    text-align: center;
+}
+
