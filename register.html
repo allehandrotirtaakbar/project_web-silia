@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register SILIA</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="daftar-container">
+            <div class="daftar-card">
+                <img src="assets/img/silia.png">
+                <h2>Register</h2>
+
+                <form>
+                    <input 
+                    type="text"
+                    name="nama"
+                    placeholder="Nama Lengkap"
+                    required>
+
+                    <input 
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required>
+
+                    <input 
+                    type="text"
+                    name="username"
+                    placeholder="Username"
+                    required>
+
+                    <label>
+                        Tanggal Lahir
+                    </label>
+                    <input
+                    type="date"
+                    name="tanggal_lahir"
+                    required>
+
+                    <div class="gender">
+                        <label>
+                            <input type="radio" name="gender" value="Laki-laki">
+                                Laki-laki
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Perempuan">
+                                Perempuan
+                        </label>
+
+                    </div>
+
+                    <input 
+                    type="tel"
+                    name="no_telp"
+                    placeholder="No. Telp"
+                    required>
+
+                    <input 
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
+
+                    <input 
+                    type="password"
+                    name="password_confirmation"
+                    placeholder="Konfirmasi Password"
+                    required>
+
+                    <button class="reg-btn" type="submit">
+                        Daftar
+                    </button>
+                </form>
+
+                <p>Sudah punya akun?
+                    <a href="login.html">
+                        Login
+                    </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

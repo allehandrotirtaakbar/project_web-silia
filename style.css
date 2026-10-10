@@ -3,17 +3,6 @@ html {
 }
 
 /* =========================
-   Untuk semua media jika di buka di mobile
-========================= */
-
-@media(max-width:768px){
-    .footer-content{
-        flex-direction: column;
-        gap: 30px;
-    }
-}
-
-/* =========================
    RESET & GLOBAL
 ========================= */
 
@@ -42,7 +31,7 @@ h2 {
 }
 
 p {
-    font-size: 16;
+    font-size: 16px;
 }
 
 
@@ -369,6 +358,7 @@ nav a:hover {
 
 .login-card {
     width: 400px;
+    min-height: 450px;
     background: white;
     padding: 40px;
     border-radius: 15px;
@@ -377,13 +367,19 @@ nav a:hover {
 }
 
 .login-card img {
-    width: 150px;
+    width: 120px;
     margin-bottom: 20px;
 }
 
 .login-card h2 {
     color: #1565c0;
     margin-bottom: 30px;
+}
+
+.login-card a {
+    color: #2174d3;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .login-card input {
@@ -407,5 +403,98 @@ nav a:hover {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+.login-card button:hover {
+    background-color: #0d47a1;
+}
+
+/* ======================================
+                REGISTER PAGE
+========================================= */
+
+.daftar-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f8fc;
+}
+
+.daftar-card {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.daftar-card img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.daftar-card h2 {
+    color: #1565c0;
+    margin-bottom: 20px;
+}
+
+.daftar-card a {
+    color: #2174d3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.daftar-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.gender {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 10px 0 20px;
+}
+
+.gender input {
+    width: auto;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.reg-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background-color: #2174d3;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reg-btn:hover {
+    background-color: #0d47a1;
+}
+
+/* =========================
+   media query
+========================= */
+
+@media(max-width:768px){
+    .footer-content{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
