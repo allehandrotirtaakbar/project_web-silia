@@ -437,7 +437,7 @@ nav a:hover {
 }
 
 .daftar-card h2 {
-    color: #1565c0;
+    color: #2174d3;
     margin-bottom: 20px;
 }
 
@@ -488,6 +488,143 @@ nav a:hover {
     background-color: #0d47a1;
 }
 
+
+/* ======================================
+                LAPORAN PAGE
+========================================= */
+
+/* ======================================
+        BUAT LAPORAN
+====================================== */
+
+
+.laporan-container {
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 60px 20px;
+    background:#f5f8fc;
+
+}
+
+.laporan-card {
+    width:1200px;
+    max-width: 100%;
+    background:white;
+    padding:50px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+
+}
+
+.laporan-header {
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.laporan-header img {
+    width:130px;
+
+}
+
+.laporan-header h2 {
+    color:#1565c0;
+    margin-top:15px;
+
+}
+
+.laporan-content {
+    display:grid;
+    grid-template-columns:3fr 1.2fr;
+    gap:40px;
+
+}
+
+.form-laporan h3,
+.info-laporan h3 {
+    color:#2174d3;
+    margin-bottom:20px;
+
+}
+
+.form-laporan input,
+.form-laporan select,
+.form-laporan textarea {
+    width:100%;
+    padding:13px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+
+}
+
+.form-laporan textarea {
+    resize:none;
+
+}
+
+.form-laporan label {
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+
+}
+
+.laporan-btn {
+    width:100%;
+    padding:13px;
+    background:#2174d3;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-weight:bold;
+    font-size:16px;
+    cursor:pointer;
+
+}
+
+.laporan-btn:hover {
+    background:#0d47a1;
+
+}
+
+.info-laporan {
+    background:#f5f8fc;
+    padding:15px;
+    border-radius:15px;
+    height: fit-content;
+
+}
+
+.info-box {
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+
+}
+
+.info-box:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.info-box h4 {
+    color:#2174d3;
+    margin-bottom:8px;
+
+}
+
+.info-box p {
+    font-size:14px;
+    color:#555;
+}
+
+
 /* =========================
    media query
 ========================= */
@@ -496,5 +633,13 @@ nav a:hover {
     .footer-content{
         flex-direction: column;
         gap: 30px;
+    }
+
+    .laporan-content {
+        grid-template-columns: 1fr;
+    }
+
+    .laporan-card {
+        width: 100%;
     }
 }
