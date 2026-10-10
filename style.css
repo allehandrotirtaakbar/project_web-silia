@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* =========================
    Untuk semua media jika di buka di mobile
 ========================= */
@@ -42,8 +46,12 @@ p {
 }
 
 
+/* ======================================
+                HOME PAGE
+========================================= */
+
 /* =========================
-   HEADER / NAVBAR
+   HEADER NAVBAR
 ========================= */
 
 header {
@@ -341,5 +349,63 @@ nav a:hover {
     padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.3);
     text-align: center;
+}
+
+/* ======================================
+                LOGIN PAGE
+========================================= */
+
+/* =========================
+   Form Login
+========================= */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f8fc;
+}
+
+.login-card {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.login-card img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.login-card h2 {
+    color: #1565c0;
+    margin-bottom: 30px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login-card button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background-color: #2174d3;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
