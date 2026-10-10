@@ -10,6 +10,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     color: #333;
     background-color: #ffffff;
     line-height: 1.6;
@@ -38,9 +39,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
+    padding: 20px 60px;
     background-color: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -82,11 +83,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #1565c0;
+    color: #2174d3;
 }
 
 .btn {
-    background-color: #1565c0;
+    background-color: #2174d3;
     color: white !important;
     padding: 12px 25px;
     border-radius: 8px;
@@ -125,20 +126,21 @@ nav a:hover {
 .hero-content h2 {
     font-size: 25px;
     max-width: 600px;
+    line-height: 1.2;
     margin-bottom: 25px;
     font-style: italic;
 }
 
 .hero-content p {
     font-size: 20px;
-    max-width: 600px;
-    margin-bottom: 25px;
+    max-width: 550px;
+    margin-bottom: 30px;
     font-style: italic;
 }
 
 .btn-primary {
     display: inline-block;
-    background-color: #1565c0;
+    background-color: #2174d3;
     font-size: 20px;
     color: white;
     padding: 12px 25px;
@@ -150,4 +152,78 @@ nav a:hover {
 
 .btn-primary:hover {
     background-color: #0d47a1;
+}
+
+
+
+/* =========================
+   MAIN Tentang
+========================= */
+
+.about {
+    padding: 70px 80px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #2174d3;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #555;
+    font-size: 18px;
+    margin: auto;
+    font-style: italic;
+    max-width: 800px;
+}
+
+
+/* =========================
+   MAIN Cara Buat laporan
+========================= */
+
+.cara {
+    padding: 70px 80px;
+    text-align: center;
+}
+
+.cara h2 {
+    color: #2174d3;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.step div {
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.step h3 {
+    width: 45px;
+    height: 45px;
+    background: #2174d3;
+    color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.step p {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
 }
