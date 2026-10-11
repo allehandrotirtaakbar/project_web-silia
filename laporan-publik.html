@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laporan Publik SILIA</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="logo">
+                <img src="assets/img/silia.png">
+            </div>
+            
+            <nav>
+                <a href="home.html">Beranda</a>
+                <a href="laporan-publik.html">Laporan Publik</a>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+            
+            </nav>
+
+        </header>
+
+        <section class="publik-header">
+            <h2>Laporan Publik</h2>
+            <p>Lihat laporan infrastruktur desa yang telah disampaikan oleh masyarakat.</p>
+
+        </section>
+
+        <section class="publik-container">
+            
+            <div class="filter-laporan">
+                <input 
+                type="text"
+                placeholder="Cari Laporan...">
+
+                <select>
+                    <option>
+                        Semua Kategori
+                    </option>
+        
+                    <option>
+                        Jalan Rusak
+                    </option>
+        
+                    <option>
+                        Lampu Jalan
+                    </option>
+        
+                    <option>
+                        Air Bersih
+                    </option>
+        
+                    <option>
+                        Drainase
+                    </option>
+        
+        
+                </select>
+        
+                <select>
+                    <option>
+                        Semua Status
+                    </option>
+        
+                    <option>
+                        Menunggu Verifikasi
+                    </option>
+        
+                    <option>
+                        Diproses
+                    </option>
+        
+                    <option>
+                        Selesai
+                    </option>
+        
+                </select>
+            </div>
+
+            <div class="publik-card-container">
+
+                <div class="laporan-card-publik">
+                    <img src="assets/img/jalan-rusak.png">
+
+                    <div>
+                        <h3>Jalan Desa Rusak</h3>
+                        <p>Lokasi: Dusun Sukamaju, Desa Mekarjaya</p>
+                        <p>Tanggal: 17 Oktober 2026</p>
+                        <a href="detail-laporan.html" class="detail-btn">
+                            Lihat Detail
+                            </a>
+                        <span class="status proses">
+                            Diproses
+                        </span>
+
+                    </div>
+                </div>
+
+                <div class="laporan-card-publik">
+                    <img src="assets/img/lampu-jalan-mati.png">
+
+                    <div>
+                        <h3>Lampu Jalan Mati</h3>
+                        <p>Lokasi: Jalan Pemuda</p>
+                        <p>Tanggal: 11 Oktober 2026</p>
+                        <a href="detail-laporan.html" class="detail-btn">
+                            Lihat Detail
+                            </a>
+                        <span class="status selesai">
+                            Selesai
+                        </span>
+
+                    </div>
+                </div>
+
+                <div class="laporan-card-publik">
+                    <img src="assets/img/drainase-rusak.png">
+
+                    <div>
+                        <h3>Saluran Drainase Rusak</h3>
+                        <p>Lokasi: Desa Harapan</p>
+                        <p>Tanggal: 08 Oktober 2026</p>
+                        <a href="detail-laporan.html" class="detail-btn">
+                            Lihat Detail
+                            </a>
+                        <span class="status menunggu">
+                            Menunggu Verifikasi 
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <h3>
+                SILIA
+            </h3>
+
+            <p>
+                Sistem Laporan Infrastruktur Desa
+            </p>
+        </footer>
+    </body>
+</html>
